@@ -1,0 +1,38 @@
+/**
+ * Travel Coin network
+ */
+namespace org.acme.ttcnetwork
+
+asset Place identified by placeId {
+    o String placeId
+    o String name
+    o Integer reward
+    --> Company company
+}
+
+participant Company identified by companyId {
+    o String companyId
+    o Integer money
+} 
+
+participant Traveler identified by travelerId {
+    o String travelerId
+    o Integer money
+}
+
+transaction VisitPlace {
+    --> Traveler traveler
+    --> Place place
+}
+
+transaction AddPlace {
+    o String placeId
+    o String name
+    o Integer reward
+    --> Company company
+}
+
+transaction UseMoney {
+    o Integer money
+    --> Traveler traveler
+}
