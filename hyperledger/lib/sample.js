@@ -1,21 +1,7 @@
-/*
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 const NS = 'org.acme.ttcnetwork';
 
 /**
- * @param {org.acme.ttcnetwork.VisitPlace} data - the trade to be processed
+ * @param {org.acme.ttcnetwork.VisitPlace} data 
  * @transaction
  */
 async function VisitPlace(data) {
@@ -34,7 +20,7 @@ async function VisitPlace(data) {
 }
 
 /**
- * @param {org.acme.ttcnetwork.AddPlace} data - the trade to be processed
+ * @param {org.acme.ttcnetwork.AddPlace} data 
  * @transaction
  */
 async function AddPlace(data) {
@@ -48,7 +34,7 @@ async function AddPlace(data) {
 }
 
 /**
- * @param {org.acme.ttcnetwork.UseMoney} data - the trade to be processed
+ * @param {org.acme.ttcnetwork.UseMoney} data 
  * @transaction
  */
 async function UseMoney(data) {
